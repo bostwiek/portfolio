@@ -1,12 +1,5 @@
-body {
-
-}
 h3 {
 	text-align: center;
-}
-
-.clear {
-	clear: both;
 }
 
 header {
@@ -14,26 +7,11 @@ header {
 	color: #fff;
 	height: 50px;
 }
-.logo {
-	float: left;
-}
-.logo strong {
-	font-weight: bold;
-}
 nav {
-	float: right;
-}
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-nav ul li {	
 	display: inline-block;
-	padding: 0;
-	margin: 0;
+	text-align: right;
 }
-nav ul li a {
+nav a {
 	display: block;
 	padding: 2.5px;
 	margin: 0 5px;
@@ -53,24 +31,16 @@ nav ul li a {
 	margin: 0;
 	padding: 0;
 }
-.about-container .container-left, 
-.skills-container .container-left, 
-.about-container .container-left {
-	background-color: #ccc;
-	padding: 25px 0;
-}
-.about-container .container-right, 
-.skills-container .container-right, 
-.about-container .container-right {
-	background-color: #999;
-	padding: 25px 0;
-}
-.skills-container,
+
 .about-container,
+.skills-container,
 .project-container,
-.container-left,
-.container-right {
+.contact-container {
 	min-height: 400px;
+}
+
+.about-container {
+
 }
 .skills-container {
 	text-align: center;
@@ -79,9 +49,7 @@ nav ul li a {
 	display: inline-block;
 	margin: 0 auto;
 	text-align: center;
-}
-.about-container {
-
+	list-style-type: none;
 }
 .project-container {
 
