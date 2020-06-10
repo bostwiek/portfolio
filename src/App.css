@@ -1,66 +1,213 @@
-h3 {
-	text-align: center;
-}
+/* D O M */
 
+body {
+	font-size: 14px;
+	padding-top: 35px;
+}
 header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	background: #000;
 	color: #fff;
-	height: 50px;
+	width: 100%;
+	height: 35px;
 }
 nav {
 	display: inline-block;
 	text-align: right;
 }
 nav a {
-	display: block;
+	display: inline-block;
 	padding: 2.5px;
 	margin: 0 5px;
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
-	line-height: 2em;
+	font-size: 14px;
+	line-height: 35px;
+	padding: 0;
+	margin: 0 5px;
+}
+.page-title {
+	font-size: 24px;
+	line-height: 4em;
+	font-weight: bold;
+	text-align: center;
 }
 
-.container {
+/* C O N T A I N E R S */
 
+.container {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .container-left, .container-right {
 	display: inline-block;
 	width: 50%;
 	min-height: 100%;
+	vertical-align: top;
 	margin: 0;
 	padding: 0;
 }
-
 .about-container,
 .skills-container,
 .project-container,
 .contact-container {
-	min-height: 400px;
+	height: calc(100vh - 35px);
+	min-height: 420px;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	box-sizing: border-box;
 }
+
+/* A B O U T */
 
 .about-container {
-
+	background-image: url('/images/bg/crystallandscape.png');
+	color: #fff;
 }
+.about-container .container {
+	height: 100%;
+}
+.about-col {
+	text-align: center;
+	padding: 30px 0;
+	margin: 0;
+}
+.about-col:last-child {
+	padding-bottom: 0 !important;
+}
+.about-col span {
+	font-size: 20px;
+}
+.about-col strong {
+	font-size: 26px;
+}
+.about-avatar {
+	display: inline-block;
+}
+.about-avatar img {
+	display: inline-block;
+	height: 130px;
+	vertical-align: middle;
+}
+.about-hi {
+	display: inline-block;
+	text-align: right;
+}
+.about-hi span {
+	line-height: 120px;
+	margin-left: 10px;
+}
+.about-col span,
+.about-col strong {
+	line-height: 1.1em;
+}
+.about-col span {
+	display: inline-block;
+	vertical-align: bottom;;
+	height: 100%;
+	text-align: left;
+}
+
+/* S K I L L S */
+
 .skills-container {
+	background-image: url('/images/bg/heroscape.png');
+	color: #fff;
 	text-align: center;
 }
 .skills-container ul {
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
+	padding: 0;
 	text-align: center;
 	list-style-type: none;
 }
+.skills-col p {
+	text-align: left;
+	line-height: 1.2em;
+	font-size: 14px;
+}
+.skills-list {
+	font-size: 10px;
+	vertical-align: top;
+}
+.skills-list strong {
+	font-size: 12px;
+}
+.skills-col {
+	padding: 10px 0;
+}
+.skills-col:last-child {
+	padding-bottom: 0 !important;
+}
+
+/* P R O J E C T S */
+
 .project-container {
 
 }
-.project-thumbnail {
-
-}
-.project-title {
-
-}
-.project-description {
-
+.project-card {
+	display: block;
+	width: 100%;
+	height: 25vh;
+	background: rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+/* C O N T A C T */
+
+.contact-container {
+	background-image: url('/images/bg/slothtotem.png');
+	background-size: auto 75%;
+	color: #000;
+	text-align: center;
+}
+.contact-form input,
+.contact-form textarea {
+	display: block;
+	width: 100%;
+	max-width: 80%;
+	margin: 0 auto;
+}
+.contact-form textarea {
+	height: 160px;
+}
+.contact-form button {
+	display: block;
+	width: 160px;
+	margin: 0 auto;
+	text-align: center;
+}
+.contact-form span {
+	text-align: left;
+}
+
+/* V I E W P O R T S */
+
+	/* desktop */
+	@media screen and (min-width: 720px) {
+		.about-container,
+		.skills-container,
+		.project-container,
+		.contact-container {
+			min-height: 600px;
+			background-size: 100% auto;
+			background-size: cover;
+		}
+		.about-container {
+			background-image: url('/images/bg/crystallandscape-landscape.png');
+		}
+		.skills-container {
+			background-size: 100% auto;
+			background-size: cover;
+		}
+		.contact-container {
+			background-size: auto 80%;
+		}
+	}
