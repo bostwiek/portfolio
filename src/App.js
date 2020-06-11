@@ -1,11 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import thumbnail from './images/thumbnail.png';
 import avatar from './images/brendo.png';
-
 
 function App() {
   return (
@@ -23,24 +20,23 @@ function App() {
 
 			<div className="about-container">
 				<div className="container">
-					<div className="about-col">
-						<div className="about-avatar">
-							<img src={avatar} />
-						</div>
-						<div className="about-hi">
+					<div className="about-avatar float-left">
+						<img src={avatar} />
+					</div>
+					<div className="about-text-container">
+						<div className="about-section about-1">
 							<span>Hi, I'm <strong>Brendon</strong></span>
 						</div>
+						<div className="about-section about-2">
+							<span>a <strong>Front End Developer</strong> by trade,</span>
+						</div>
+						<div className="about-section about-3">
+							<span>and an <strong>illustrator</strong>, <strong>animator</strong>, and <strong>designer</strong> by passion.</span>
+						</div>
 					</div>
-					<div className="about-col">
-						<span>a <strong>Front End Developer</strong> by trade,</span>
-					</div>
-					<div className="about-col">
-						<span>and an <strong>illustrator</strong>, <strong>animator</strong>, and <strong>designer</strong> by passion.</span>
-					</div>
+					<div className="clear"></div>
 				</div>
 			</div>
-
-
 
 			<div className="skills-container">
 				<div className="container">
