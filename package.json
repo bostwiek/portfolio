@@ -1,9 +1,8 @@
 {
-  "name": "reveal.js",
+  "name": "portfolio",
   "version": "4.0.2",
-  "description": "The HTML Presentation Framework",
-  "homepage": "https://revealjs.com",
-  "subdomain": "revealjs",
+  "description": "Brendon Mancini - Front End Developer",
+  "homepage": "https://bostwiek.com",
   "main": "dist/reveal.js",
   "module": "dist/reveal.esm.js",
   "license": "MIT",
@@ -13,13 +12,13 @@
     "build": "gulp"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "https://hakim.se"
+    "name": "Brendon Mancini",
+    "email": "bemancini@gmail.com",
+    "web": "https://bostwiek.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/bostwiek/portfolio.git"
   },
   "engines": {
     "node": ">=10.0.0"
