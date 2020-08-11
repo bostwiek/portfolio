@@ -68,6 +68,7 @@ a:hover {
 .project-section .project-thumbnail {
 	float: right;
 	width: 35%;
+	border-radius: 10px;
 }
 
 /* contact form */
@@ -183,8 +184,15 @@ i {
 	position: relative;
 	margin:.4em;
 	font-size: 1rem!important;
+	opacity: 0.3;
+	cursor: pointer;
+}
 
-	animation: float 1.5s ease-in-out infinite;
+i.fa-arrow-down {
+	animation: float-vertical 1.5s ease-in-out infinite;
+}
+i.fa-arrow-right {
+	animation: float-horizontal 1.5s ease-in-out infinite;
 }
 i:before {
 	font-size: 2em;
@@ -392,6 +400,22 @@ a i:before {
 .reveal small * {
 	vertical-align: top
 }
+@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
+* {
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #CCD1D9;
+}
 
 /**********************
 *			ANIMATIONS			*
@@ -402,11 +426,15 @@ a i:before {
 	-moz-transition: all 800ms ease-in-out;
 	transition: all 800ms ease-in-out;
 }
-
-@keyframes float {
+@keyframes float-vertical {
 	0% {top: 0;}
 	50% {top:-10px}
 	100% {top: 0;}
+}
+@keyframes float-horizontal {
+	0% {right: 0;}
+	50% {right:-10px}
+	100% {right: 0;}
 }
 
 
