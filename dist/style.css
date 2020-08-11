@@ -42,7 +42,7 @@ a:hover {
 	font-size: 1.2em;
 }
 .reveal ul.skills-list {
-	text-align: left;
+	text-align: center;
 	list-style-type: none;
 	font-size: 0.8em;
 }
@@ -59,33 +59,13 @@ a:hover {
 	padding: 0 !important;
 	text-decoration: none;
 }
-.project {
-	position: relative;
-	min-width: 50%;
-	height: 100%;
-	min-height: 200px;
-	max-height: 300px;
-	background-repeat: no-repeat;
-	background-size: 100% auto;
-	background-size: cover;
-	background-position: top center;
-	margin: 0;
-	padding: 0;
-}
-.project h1 {
-	position: absolute;
-	bottom: 45%;
-	left: 0;
-	right: 0;
-	font-size: 0.8em;
-}
-#project-section .project-article {
+.project-section .project-article {
 	float: left;
 	text-align: left;
 	width: 55%;
 	font-size: 0.9em;
 }
-.project-thumbnail {
+.project-section .project-thumbnail {
 	float: right;
 	width: 35%;
 }
@@ -416,6 +396,12 @@ a i:before {
 /**********************
 *			ANIMATIONS			*
 **********************/
+
+.reveal .progress span {
+	-webkit-transition: all 800ms ease-in-out;
+	-moz-transition: all 800ms ease-in-out;
+	transition: all 800ms ease-in-out;
+}
 
 @keyframes float {
 	0% {top: 0;}
