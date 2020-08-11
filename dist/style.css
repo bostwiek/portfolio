@@ -46,10 +46,15 @@ a:hover {
 	list-style-type: none;
 	font-size: 0.8em;
 }
-.skills-list strong {
-	font-size: 1.2em;
+.skills-list {
+	font-weight: bold;
 }
-
+.skills-list-developer {
+	color: #c6c4ec
+}
+.skills-list-designer {
+	color: #c6e2c1
+}
 .projects-container {
 	display: flex;
   flex-flow: row wrap;
