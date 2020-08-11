@@ -30,8 +30,10 @@
 
 		<meta name="msapplication-TileImage" content="dist/images/favicon/ms-icon-144x144.png">
 
+
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/button.css">
 		<link rel="stylesheet" href="dist/style.css">
 
 		<!-- Theme used for syntax highlighted code -->
@@ -42,12 +44,7 @@
 		<!--
 	
 				STILL NEED TO ADD
-				- working contact submission
-				- different background for slide 2 or 3
-				- link to github with text
-					- My writing is not as good as my coding, so check out my code here! or something similar
 				- font overhaul (google fonts should be fine here)
-				- "looks so plain, could be big dramatic fonts as heading, idk tho" -Su
 	
 		-->
 		
@@ -79,6 +76,9 @@
 						I have <strong>4 years professional-level experience</strong> working as a <strong>Front End</strong> and an <strong>Email Developer</strong>.
 						<!-- for Eat24, Yelp, and Grubhub.-->
 					</h1></div>
+					<br>
+					<br>
+					<br>
 					<br>
 					<p>
 						Outside of work, I’ve spent the last few years adding to an illustration portfolio, studying UX/UI Design, and making satirical cartoons.
@@ -119,7 +119,7 @@
 						<br>
 						<br>
 						<p style="font-size:0.8em">
-							I've also worked on a Agile and Scrum teams, setup, coded, and tracked email campaigns, and have plenty of experience working with version control software on a team.
+							I've also worked on Agile and Scrum teams, setup, coded, and tracked email campaigns, and have plenty of experience co-developing with version control software.
 						</p>
 					</div>
 				</section>
@@ -133,7 +133,7 @@
 						<h1>Interested in some <strong>Projects</strong> I've worked on?</h1>
 						<br>
 						<p>
-							I'm better at coding than copywriting, so head over to my <a href="https://github.com/bostwiek" target="_new"><strong style="font-size:1.2em">github</strong></a> if you want to dive straight into my code.
+							I'm better at coding than copywriting, so check out my <a href="https://github.com/bostwiek" target="_new"><strong>GitHub</strong></a> if you want to dive straight into my code.
 						</p>
 						<br><br>
 						<p>	
@@ -154,8 +154,10 @@
 								<br><br>
 								Built and designed using Shopify and Adobe Suite, illustrations created in Procreate.
 								<br>
-								<p style="text-align:right">
-									<a href="http://myblank-it.com">live</a>
+								<p class="project-button-container">
+									<a href="https://myblank-it.com" class="btn-link" target="_new">
+										<button type="button" class="btn btn-primary">View Site</button>
+									</a>
 								</p>
 						</div>
 						<img src="dist/images/projects/blankit.png" class="project-thumbnail" />
@@ -175,8 +177,13 @@
 								<br><br>
 								Built using React.
 								<br>
-								<p style="text-align:center">
-									<a href="https://dontstarvetogether-crockpot.netlify.app/" target="_new">live</a> <a href="https://github.com/bostwiek/dontstarvetogether-crockpot" target="_new">github</a>
+								<p class="project-button-container">
+									<a href="https://dontstarvetogether-crockpot.netlify.app/" class="btn-link" target="_new">
+										<button type="button" class="btn btn-primary">View Site</button>
+									</a>
+									<a href="https://github.com/bostwiek/dontstarvetogether-crockpot" class="btn-link" target="_new">
+										<button type="button" class="btn btn-success">GitHub</button>
+									</a>
 								</p>
 							</p>
 						</div>
@@ -194,8 +201,10 @@
 								<br><br>
 								Built using Wordpress.
 								<br>
-								<p style="text-align:center">
-									<a href="https://bostwiek.com/" target="_new">live</a>
+								<p class="project-button-container">
+									<a href="https://bostwiek.com/" class="btn-link" target="_new">
+										<button type="button" class="btn btn-primary">View Site</button>
+									</a>
 								</p>
 							</p>
 						</div>
@@ -213,8 +222,13 @@
 								<br><br>
 								Built using React and bootstrap.
 								<br>
-								<p style="text-align:center">
-									<a href="https://react-login-bostwiek.netlify.app/" target="_new">live</a> <a href="https://github.com/bostwiek/react-login" target="_new">github</a>
+								<p class="project-button-container">
+									<a href="https://react-login-bostwiek.netlify.app/" class="btn-link" target="_new">
+										<button type="button" class="btn btn-primary">View Site</button>
+									</a>
+									<a href="https://github.com/bostwiek/react-login" class="btn-link" target="_new">
+										<button type="button" class="btn btn-success">GitHub</button>
+									</a>
 								</p>
 							</p>
 						</div>
@@ -238,31 +252,25 @@
 							<br>
 							Contact me via email at
 							<br>
-							<a href="mailto:bemancini@gmail.com">bemancini@gmail.com</a>,
+							<a href="mailto:bemancini@gmail.com">
+								bemancini@gmail.com
+							</a>
 							<br><br>
-							Reach out on
+							Or reach out on social media
 							<br>
-							<a href="https://www.linkedin.com/in/bemancini/" target="_new">LinkedIn</a>,
-							<br><br>
-							Or follow my work on
-							<br>
-							<a href="https://github.com/bostwiek" target="_new">github</a>!						
+							<a href="https://www.linkedin.com/in/bemancini/"  class="btn-link"target="_new">
+								<button type="button" class="btn btn-info">LinkedIn</button>
+							</a>
+
+							<a href="https://github.com/bostwiek"  class="btn-link"target="_new">
+								<button type="button" class="btn btn-success">Github</button>
+							</a>						
 						</p>
 						<br><br>
 						<p style="font-size:0.6em">
 							site built with <a href="https://revealjs.com/" target="_new">reveal.js</a>, <a href="https://github.com/bostwiek/portfolio" target="_new">github</a>, and deployed with <a href="https://netlify.app" target="_new">netlify</a>
 						</p>
 					</div>
-
-					<!-- <div class="contact-form">
-						<div class="contact-label"><span>Email:</span></div>
-						<input type="text" maxLength="100" placeholder="your@email.com" />
-						<br />
-						<div class="contact-label"><span>Message:</span></div>
-						<textarea maxLength="2000"></textarea>
-						<br />
-						<button class="contact-submit">Send</button>
-						</div> -->
 				</section>
 				<!-- CONTACT -->
 				
@@ -287,6 +295,7 @@
 				overview:false,
 				width: 800,
 				height: 720,
+				transition: 'slide',
 				backgroundTransition: 'fade'
 			});
 			
