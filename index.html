@@ -109,8 +109,8 @@
 					<br>
 					<br>
 					<br>
-					<div class="row-2">
-						<div style="width:50%;float:left">
+					<div>
+						<div class="row-2" style="width:50%;float:left">
 							<ul class="skills-list skills-list-developer">
 								<li>&#x2024;&nbsp;Javascript (ES6)&nbsp;&#x2024;</li>
 								<li>&#x2024;&nbsp;Node&nbsp;&#x2024;</li>
@@ -121,7 +121,7 @@
 								<li>&#x2024;&nbsp;HTML5 / CSS3&nbsp;&#x2024;</li>
 							</ul>
 						</div>
-						<div style="width:50%;float:right">
+						<div class="row-3" style="width:50%;float:right">
 							<ul class="skills-list skills-list-designer">
 								<li>&#x2024;&nbsp;Photoshop&nbsp;&#x2024;</li>
 								<li>&#x2024;&nbsp;Illustrator&nbsp;&#x2024;</li>
@@ -288,7 +288,7 @@
 						</p>
 					</div>
 					<div class="row-4">
-						<p style="font-size:0.6em">
+						<p style="font-size:0.6em;margin-top:30px;">
 							site built with <a href="https://revealjs.com/" target="_new">reveal.js</a>, <a href="https://github.com/bostwiek/portfolio" target="_new">github</a>, and deployed with <a href="https://netlify.app" target="_new">netlify</a>
 						</p>
 					</div>
@@ -303,9 +303,7 @@
 		<script src="dist/reveal.js"></script>
 		<script>
 
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
+			// Initialize reveal.js and set a few override options
 			Reveal.initialize({
 				hash: true,
 				controls:false,
@@ -320,10 +318,12 @@
 				backgroundTransition: 'fade'
 			});
 
+			// When reveal.js is fully loaded
 			Reveal.on('ready', event => {
 				animateRows(event.currentSlide.id);
 			});
 			
+			// On slide change
 			Reveal.on('slidechanged', event => {
 				setTimeout(() => {
 					animateRows(event.currentSlide.id);					
@@ -331,36 +331,31 @@
 
 			});
 
-			// need to have these sort by array method
+			// this is where all slide changed animations are handled
+			
+			const rows = [ 'row-1', 'row-2', 'row-3', 'row-4', 'row-5' ];
+			
 			function resetRowOpacity() {
-				document.querySelector('row-1').style.opacity = 0;
-				document.querySelector('row-2').style.opacity = 0;
-				document.querySelector('row-3').style.opacity = 0;
-				document.querySelector('row-4').style.opacity = 0;
-				document.querySelector('row-5').style.opacity = 0;
+				rows.forEach(element => {
+					document.querySelector(element).style.opacity = 0;					
+				});
 			}
 
 			function animateRows(currentSlide) {
-				// event.previousSlide, event.currentSlide, event.indexh, event.indexv
-				// event.currentSlide.id is going to tie animations together
 
-				let row1Query = '#'+currentSlide+' .row-1';
-				let row2Query = '#'+currentSlide+' .row-2';
-				let row3Query = '#'+currentSlide+' .row-3';
-				let row4Query = '#'+currentSlide+' .row-4';
-				let row5Query = '#'+currentSlide+' .row-5';
+				let rowQuery = [
+					'#'+currentSlide+' .row-1',
+					'#'+currentSlide+' .row-2',
+					'#'+currentSlide+' .row-3',
+					'#'+currentSlide+' .row-4',
+					'#'+currentSlide+' .row-5'
+				]
 
-				let row1 = document.querySelector(row1Query);
-				let row2 = document.querySelector(row2Query);
-				let row3 = document.querySelector(row3Query);
-				let row4 = document.querySelector(row4Query);
-				let row5 = document.querySelector(row5Query);
+				rowQuery.forEach(element => {
+					let currentRow = document.querySelector(element);
+					if(currentRow) currentRow.style.opacity = 1;
+				});
 
-				if(row1) row1.style.opacity = 1;
-				if(row2) row2.style.opacity = 1;
-				if(row3) row3.style.opacity = 1;
-				if(row4) row4.style.opacity = 1;
-				if(row5) row5.style.opacity = 1;
 			}
 
 		</script>
